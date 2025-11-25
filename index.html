@@ -1,7 +1,56 @@
-<div align="right">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home - Jaeseong Lee</title>
+<style>
+  /* [1] 메뉴바 스타일 (마우스 올리면 커지는 효과) */
+  .menu-bar {
+    text-align: right;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  .menu-bar a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #333;           /* 평소엔 진한 회색 */
+    font-size: 18px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: all 0.2s;  /* 부드러운 애니메이션 */
+  }
+  .menu-bar a:hover {
+    color: #8C1515;        /* 붉은색으로 변경 */
+    font-weight: bold;
+    transform: scale(1.2); /* ⭐ 1.2배로 확 커짐 */
+  }
+  .menu-bar b {            /* 현재 페이지(Home)는 붉고 굵게 */
+    color: #8C1515;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+  /* [2] 시간표 접기/펼치기 화살표 제거 및 스타일 */
+  details > summary {
+    list-style: none;      /* 화살표 제거 (표준) */
+    cursor: pointer;       /* 손가락 모양 */
+    font-weight: bold;
+    color: #333;
+    transition: color 0.2s;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;         /* 크롬/사파리 화살표 제거 */
+  }
+  details > summary:hover {
+    color: #8C1515;        /* 마우스 올리면 붉게 */
+  }
+</style>
+</head>
+<body>
+
+<div class="menu-bar">
   <b>Home</b> | 
-  <a href="Project.html">Project</a> | 
-  <a href="Bookshelf.html">Bookshelf</a>
+  <a href="project.html">Projects</a> | 
+  <a href="bookshelf.html">Bookshelf</a>
 </div>
 
 <br>
@@ -10,13 +59,13 @@
 
 <br>
 
-<table>
+<table width="100%">
   <tr>
-    <td width="30%" valign="top">
-      <img src="PICTURE.png" alt="Profile Picture" width="100%" style="border-radius: 40px;">
+    <td width="30%" valign="top" align="center">
+      <img src="PICTURE.png" alt="Profile Picture" width="80%" style="border-radius: 40px; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
     </td>
     
-    <td width="70%" valign="top" style="padding-left: 70px;">
+    <td width="70%" valign="top" style="padding-left: 50px;">
       <b>Undergraduate Student, Department of English Language and Literature, Kunsan National University</b>
       <br><br>
       My name is "Jaeseong". I created this website as part of Professor Ahn’s Computational English Linguistics course this semester.
@@ -33,61 +82,23 @@
       e-mail: leejaesung904@gmail.com
       <br>
       
-      
       <br>
-       <h3>Course Listening</h3>
-      
-       <details>
-  <summary> Fall 2025 (Click here)</summary>
-  
-  <br> <table border="1" style="border-collapse: collapse; width: 70%;">
-    <thead>
-      <tr style="background-color: #f2f2f2;">
-        <th style="padding: 8px; text-align: left;">Course Title</th>
-        <th style="padding: 8px; text-align: left;">Professor</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="padding: 8px;">Computational English Linguistics</td>
-        <td style="padding: 8px;">Prof. Ahn</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">Understanding English Structure</td>
-        <td style="padding: 8px;">Prof. Cho</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">British and American Culture</td>
-        <td style="padding: 8px;">Prof. Han</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">History of English</td>
-        <td style="padding: 8px;">Prof. Park</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">English Grammar</td>
-        <td style="padding: 8px;">Prof. Cho</td>
-      </tr>
-      <tr>
-        <td style="padding: 8px;">English Reading</td>
-        <td style="padding: 8px;">Prof. Cho</td>
-      </tr>
-    </tbody>
-  </table>
-
-</details>
-        <a href="Timetable.pdf" target="_blank"><b>Fall 2025 Course Schedule</b> (pdf version)</a>
-        <br><br>
-
-      <h3>Reading Interests</h3>
-<ul>
-  <li><i>Frankenstein; or, The Modern Prometheus</i> by Mary Shelley — Gothic Literature, Early Science Fiction</li>
-  <li><i>Mrs Dalloway</i> by Virginia Woolf — Modernism, Feminist Narratives</li>
-  <li><i>1984</i> by George Orwell — Dystopian Literature, Political Allegory, Totalitarianism</li>
-  <li><i>Animal Farm</i> by George Orwell — Political Satire, Allegory, Marxism</li>
-  <li><i>The Temple of the Golden Pavilion</i> by Yukio Mishima — Aestheticism, Existentialism, Psychological Fiction</li>
-</ul>
-
-    </td>
-  </tr>
-
+      <h3>Course Listing</h3> <details>
+        <summary>👉 Fall 2025 (Click here)</summary>
+        
+        <br> <table border="1" style="border-collapse: collapse; width: 90%;">
+          <thead>
+            <tr style="background-color: #f2f2f2;">
+              <th style="padding: 8px; text-align: left;">Course Title</th>
+              <th style="padding: 8px; text-align: left;">Professor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 8px;">Computational English Linguistics</td>
+              <td style="padding: 8px;">Prof. Ahn</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">Understanding English Structure</td>
+              <td style="padding: 8px;">Prof. Cho</td>
+            </tr>
