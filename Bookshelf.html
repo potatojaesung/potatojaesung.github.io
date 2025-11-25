@@ -13,6 +13,7 @@
   .book-cover {
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* 책 그림자 */
     transition: transform 0.2s; /* 마우스 올렸을 때 효과 */
+    cursor: pointer; /* 마우스 올리면 손가락 모양 */
   }
   .book-cover:hover {
     transform: scale(1.05); /* 마우스 올리면 책이 살짝 커짐 */
@@ -48,26 +49,39 @@
 <div class="shelf">
   <table width="100%" cellpadding="10">
     <tr align="center" valign="bottom">
+      
       <td width="20%">
-        <img src="프랑켄슈타인.jpg" width="120">
+        <a href="https://www.notion.so/여기에_프랑켄슈타인_주소" target="_blank">
+          <img src="프랑켄슈타인.jpg" width="120" class="book-cover">
+        </a>
         <div class="book-title">Frankenstein</div>
         <div class="book-author">Mary Shelley</div>
       </td>
+
       <td width="20%">
-        <img src="댈러웨이부인.png">
+        <a href="https://www.notion.so/여기에_댈러웨이_주소" target="_blank">
+          <img src="댈러웨이부인.png" width="120" class="book-cover">
+        </a>
         <div class="book-title">Mrs. Dalloway</div>
         <div class="book-author">Virginia Woolf</div>
       </td>
+
       <td width="20%">
-        <img src="1984.jpg">
+        <a href="https://www.notion.so/여기에_1984_주소" target="_blank">
+          <img src="1984.png" width="120" class="book-cover">
+        </a>
         <div class="book-title">1984</div>
         <div class="book-author">George Orwell</div>
       </td>
+
       <td width="20%">
-        <img src="싯다르타.jpg" width="120">
+        <a href="https://www.notion.so/여기에_싯다르타_주소" target="_blank">
+          <img src="싯다르타.jpg" width="120" class="book-cover">
+        </a>
         <div class="book-title">Siddhartha</div>
         <div class="book-author">Hermann Hesse</div>
       </td>
+
       <td width="20%">&nbsp;</td>
     </tr>
   </table>
@@ -75,7 +89,7 @@
 
 <br><br>
 <p align="center" style="font-size: 12px; color: #888;">
-  * Click on the spine to see my review (Coming Soon)
+  * Click on the book cover to read my review on Notion.
 </p>
 
 </body>
