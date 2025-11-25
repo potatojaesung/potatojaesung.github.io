@@ -142,11 +142,11 @@
 <br><br>
 </table>
 
-<div style="width: 100%; background-color: #8C1515; color: white; margin-top: 60px; font-family: Arial, sans-serif; text-align: center; padding: 30px 0;">
+<div id="animated-footer">
   
   <div style="font-weight: bold; margin-bottom: 8px; font-size: 15px;">
-    <span style="color: white; margin: 0 15px; opacity: 0.7;">Home</span>
-    <a href="Project.html" style="color: white; text-decoration: none; margin: 0 15px;">Projects</a>
+    <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px;">Home</a>
+    <span style="color: white; margin: 0 15px; opacity: 0.7;">Projects</span>
     <a href="Bookshelf.html" style="color: white; text-decoration: none; margin: 0 15px;">Bookshelf</a>
     <a href="mailto:leejaesung904@gmail.com" style="color: white; text-decoration: none; margin: 0 15px;">Contact Me</a>
   </div>
@@ -160,6 +160,17 @@
   </div>
 
 </div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show'); // 화면에 보이면 'show' 클래스 추가
+      }
+    });
+  });
+  observer.observe(document.getElementById('animated-footer'));
+</script>
 
 </body>
 </html>
