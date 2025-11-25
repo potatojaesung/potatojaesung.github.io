@@ -3,11 +3,15 @@
 <head>
 <title>Projects - Jaeseong Lee</title>
 <style>
-  /* 1. 프로젝트 이미지 스타일 (크기 대폭 수정) */
+  /* 1. 프로젝트 이미지 스타일 */
   .project-img {
-    width: 350px;       /* 너비: 250px -> 350px (훨씬 넓게!) */
-    height: 230px;      /* 높이: 180px -> 230px (비율 맞춰서 키움) */
-    object-fit: cover;  /* 사진이 찌그러지지 않고 틀에 꽉 차게 */
+    width: 350px;       /* 너비 고정 */
+    height: 230px;      /* 높이 고정 */
+    
+    /* ⭐ 여기가 핵심 수정 포인트! ⭐ */
+    object-fit: contain; /* 사진이 잘리지 않고 비율 그대로 다 들어오게 함 */
+    background-color: #ffffff; /* 남는 여백은 흰색으로 깔끔하게 채움 */
+    
     border: 1px solid #ddd;
     border-radius: 10px; /* 둥근 모서리 */
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* 그림자 */
@@ -16,7 +20,7 @@
 
   /* 2. 마우스 올리면 살짝 커지는 효과 */
   .project-img:hover {
-    transform: scale(1.02); /* 사진이 커서 부담스럽지 않게 확대 비율 살짝 줄임 */
+    transform: scale(1.02);
   }
 </style>
 </head>
@@ -94,6 +98,38 @@
   </tr>
 
 </table>
+
+  <div style="background-color: #8C1515; color: white; padding: 40px 0; margin-top: 80px; font-family: Arial, sans-serif;">
+  
+  <table width="90%" align="center" style="max-width: 1000px;">
+    <tr>
+      <td width="25%" valign="top" style="padding-right: 20px;">
+        <h2 style="margin: 0; font-family: 'Times New Roman', serif; letter-spacing: -1px;">
+          Kunsan<br>National<br>University
+        </h2>
+      </td>
+
+      <td width="75%" valign="top" style="border-left: 1px solid #B85656; padding-left: 30px;">
+        
+        <div style="font-weight: bold; margin-bottom: 10px; font-size: 15px;">
+          <a href="index.html" style="color: white; text-decoration: none; margin-right: 20px;">Home</a>
+          <a href="project.html" style="color: white; text-decoration: none; margin-right: 20px;">Academic Projects</a>
+          <a href="bookshelf.html" style="color: white; text-decoration: none; margin-right: 20px;">Bookshelf</a>
+          <a href="mailto:leejaesung904@gmail.com" style="color: white; text-decoration: none;">Contact Me</a>
+        </div>
+
+        <div style="font-size: 12px; color: #E8Caca; line-height: 1.6;">
+          Department of English Language and Literature<br>
+          College of Humanities, Kunsan National University<br>
+          <br>
+          &copy; 2025 Jaeseong Lee. All Rights Reserved. Designed for Computational English Linguistics Course.
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+</div>
 
 </body>
 </html>
