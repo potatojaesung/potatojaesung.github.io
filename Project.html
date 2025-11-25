@@ -2,13 +2,30 @@
 <html>
 <head>
 <title>Projects - Jaeseong Lee</title>
+<style>
+  /* 1. 프로젝트 이미지 스타일 (크기 고정) */
+  .project-img {
+    width: 250px;       /* 너비 고정 (원하는 크기로 조절 가능) */
+    height: 180px;      /* 높이 고정 */
+    object-fit: cover;  /* 비율 유지하며 꽉 채우기 (찌그러짐 방지) */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* 그림자 */
+    transition: transform 0.2s; /* 마우스 올렸을 때 효과 */
+  }
+
+  /* 2. 마우스 올리면 살짝 커지는 효과 */
+  .project-img:hover {
+    transform: scale(1.03);
+  }
+</style>
 </head>
 <body>
 
 <div align="right">
   <a href="index.html">Home</a> | 
   <b>Project</b> | 
-  <a href="Bookshelf.html">Booksehlf</a>
+  <a href="bookshelf.html">Bookshelf</a>
 </div>
 
 <br>
@@ -16,9 +33,10 @@
 <br>
 
 <table width="100%">
+  
   <tr>
     <td width="30%" valign="top" align="center">
-       <img src="R.png" alt="R Project" width="90%" style="border: 1px solid #ddd; border-radius: 10px;">
+       <img src="R.png" class="project-img" alt="R Project">
     </td>
     <td width="70%" valign="top" style="padding-left: 20px;">
       <h3>1. <a href="CompLing.html" target="_blank">My first R projects</a></h3>
@@ -35,7 +53,7 @@
 
   <tr>
     <td width="30%" valign="top" align="center">
-       <img src="제인에어.webp" alt="Jane Eyre Analysis" width="40%" style="border: 1px solid #ddd; border-radius: 10px;">
+       <img src="제인에어.webp" class="project-img" alt="Jane Eyre Analysis">
     </td>
     <td width="70%" valign="top" style="padding-left: 20px;">
       <h3>2. <a href="Jane Eyre.html" target="_blank">Computational Analysis of <i>Jane Eyre</i> (N-gram)</a></h3>
@@ -50,21 +68,26 @@
 
   <tr><td colspan="2"><br><hr style="border-top: 1px dashed #bbb;"><br></td></tr>
 
-   <tr>
-     <td width="30%" valign="top" align="center">
-        <img src="중간고사.svg" alt="Midterm Project" width="40%" style="border: 1px solid #ddd; border-radius: 10px;">
-     </td>
-     <td width="70%" valign="top" style="padding-left: 20px;">
-       <h3>3. <a href="midterm2025.html" target="_blank">Midterm: AI Theory & N-gram Analysis</a></h3>
-       <p>
-         <b>Course:</b> Computational English Linguistics (Prof. Ahn)<br>
-         <b>Topic:</b> Generative AI Concepts & Text Generation<br>
-         <b>Tools:</b> R (Packages: <code>ngram</code>, <code>tidyverse</code>, <code>gutenbergr</code>)<br>
-       </p>
-       <p>
-         This midterm project covers both the theoretical foundations of AI and practical text analysis.
-         I explored key concepts such as <b>Transformers, GPUs, and the Markov assumption</b>.
-  
+  <tr>
+    <td width="30%" valign="top" align="center">
+       <img src="Midterm.png" class="project-img" alt="Midterm Project">
+    </td>
+    <td width="70%" valign="top" style="padding-left: 20px;">
+      <h3>3. <a href="midterm2025.html" target="_blank">Midterm: AI Theory & N-gram Analysis</a></h3>
+      <p>
+        <b>Course:</b> Computational English Linguistics (Prof. Ahn)<br>
+        <b>Topic:</b> Generative AI Concepts & Text Generation<br>
+        <b>Tools:</b> R (Packages: <code>ngram</code>, <code>tidyverse</code>, <code>gutenbergr</code>)<br>
+      </p>
+      <p>
+        This midterm project covers both the theoretical foundations of AI and practical text analysis.
+        I explored key concepts such as <b>Transformers, GPUs, and the Markov assumption</b>.
+        <br><br>
+        <b>Key Activities:</b>
+        <ul>
+            <li>Analyzed Lewis Carroll's <i>Alice's Adventures in Wonderland</i> using R.</li>
+            <li>Generated sentences using various N-gram models (Bigram to 30-gram).</li>
+            <li>Compared the trade-off between <b>grammatical accuracy</b> and <b>creativity</b> based on the value of N.</li>
         </ul>
       </p>
     </td>
